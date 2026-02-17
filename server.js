@@ -13,7 +13,6 @@ app.use(cors({
   credentials: false
 }));
 
-app.options('*', cors());
 app.use(express.json());
 
 // ✅ FIXED: Use DATABASE_URL for Render, fallback to localhost
